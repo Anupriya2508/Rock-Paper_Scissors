@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Stone paper scissors</title>
+</head>
+
+<body>
+  <h3 class="title">Rock Paper Scissors</h3>
+  <button class="move-button" onclick="playGame('Rock')"><img alt="Rock Image" src="Rock.jpeg" height="100px"></button>
+  <button class="move-button" onclick="playGame('Paper')"><img alt="Paper Image" src="Paper.jpeg"
+      height="100px"></button>
+  <button class="move-button" onclick="playGame('Scissors')"><img alt="Scissors Image" src="Scissors.jpeg"
+      height="100"></button>
+
+  <p class="js-result result">You win.</p>
+  <p class="js-move">Your move: stone Computer move : stone</p>
+  <p class="js-score score">Win : 0 Loss: 0 Draw: 0</p>
+  <button onclick="score.wins=0; score.loss=0; score.tie=0; updateScore();" class="reset-score-button">Reset
+    Score</button>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
